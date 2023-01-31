@@ -247,12 +247,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
-function printAllNames(names){
-  for(let i = 0; i < names.length; i++){
-    console.log(names[i])
-  }
-}
-printAllNames(namesArr)
+// function printAllNames(names){
+//   for(let i = 0; i < names.length; i++){
+//     console.log(names[i])
+//   }
+// }
+// printAllNames(namesArr)
 
 
 
@@ -267,6 +267,19 @@ printAllNames(namesArr)
 //CODE HERE
 
 
+// function thatsOdd(num){
+//   if(num % 2 === 0){
+//     return 'Thats not odd'
+//   } else {
+//     return 'Thats is odd indeed!'
+//   }
+// }
+
+
+// let oddChecker = thatsOdd(8)
+// console.log(oddChecker)
+
+
 ////////////////// PROBLEM 14 ////////////////////
 
 /*
@@ -279,6 +292,12 @@ printAllNames(namesArr)
 
 //CODE HERE
 
+// const bestMovie = movie => {
+//   return `${movie} is the best movie ever!`
+// }
+
+// let titles = bestMovie('Iron man')
+// console.log(titles)
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -293,6 +312,23 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 
 //CODE HERE
 
+
+function bigOrSmall(arr){
+  let answers = []
+  for(let i = 0; i < arr.length; i++){
+    if (arr[i] >= 100){
+      answers.push('big')
+    } else{
+      answers.push('small')
+    }
+  }
+   return answers
+}
+
+
+let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+
+console.log(arrayEvaluator)
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
