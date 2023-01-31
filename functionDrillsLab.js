@@ -188,6 +188,21 @@ function exclaimFour(str) {
 
 //CODE HERE
 
+function nameCheck(name){
+  if(name === 'steven'){
+    console.log('What is up steven')
+  }
+  else{
+    console.log(`Cool name, ${name}`)
+  }
+}
+
+let nameGreeting = nameCheck('steven')
+
+
+nameCheck(nameGreeting)
+console.log(nameGreeting)
+
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
