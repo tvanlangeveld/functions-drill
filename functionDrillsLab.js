@@ -313,22 +313,22 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 //CODE HERE
 
 
-function bigOrSmall(arr){
-  let answers = []
-  for(let i = 0; i < arr.length; i++){
-    if (arr[i] >= 100){
-      answers.push('big')
-    } else{
-      answers.push('small')
-    }
-  }
-   return answers
-}
+// function bigOrSmall(arr){
+//   let answers = []
+//   for(let i = 0; i < arr.length; i++){
+//     if (arr[i] >= 100){
+//       answers.push('big')
+//     } else{
+//       answers.push('small')
+//     }
+//   }
+//    return answers
+// }
 
 
-let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+// let arrayEvaluator = bigOrSmall(bigOrSmallArray)
 
-console.log(arrayEvaluator)
+// console.log(arrayEvaluator)
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -339,6 +339,20 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+
+// function theEliminator(contestants, loser) {
+//   for(let i = 0; i < contestants.length; i++){
+//     if(contestants[i] === loser){
+//       contestants.splice(i, 1)
+//     }
+//   }
+//   return contestants 
+//   }
+
+// let newContestants = theEliminator(contestants, loser)
+
+// console.log(newContestants)
+
 
 
 ////////////////// PROBLEM 17 ////////////////////
@@ -351,6 +365,16 @@ let sampleString = "Hi, my name is Kylo."
 //CODE HERE
 
 
+// function capitilizeString(stringName){
+// return stringName.toUpperCase()
+// }
+
+// let capsNums = capitilizeString('tanner is a happy camper')
+
+// console.log(capsNums)
+
+
+
 ////////////////// PROBLEM 18 ////////////////////
 /*
   Write a function called emailCheck that takes in
@@ -361,6 +385,22 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+
+
+function emailCheck(email) {
+  email = String(email).trim()
+
+  if (email.includes('@')) {
+    return 'email verified'
+  } else {
+    return 'must provide a valid email address'
+  }
+}
+
+emailGood = emailCheck('tanner@hotmail.com')
+
+console.log(emailGood)
+
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
