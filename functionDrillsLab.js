@@ -188,20 +188,20 @@ function exclaimFour(str) {
 
 //CODE HERE
 
-function nameCheck(name){
-  if(name === 'steven'){
-    console.log('What is up steven')
-  }
-  else{
-    console.log(`Cool name, ${name}`)
-  }
-}
+// function nameCheck(name){
+//   if(name === 'steven'){
+//     console.log('What is up steven')
+//   }
+//   else{
+//     console.log(`Cool name, ${name}`)
+//   }
+// }
 
-let nameGreeting = nameCheck('steven')
+// let nameGreeting = nameCheck('steven')
 
 
-nameCheck(nameGreeting)
-console.log(nameGreeting)
+// nameCheck(nameGreeting)
+// console.log(nameGreeting)
 
 
 ////////////////// PROBLEM 11 ////////////////////
@@ -217,6 +217,26 @@ console.log(nameGreeting)
 //CODE HERE
 
 
+// function faveColorFinder(color){
+//   if(color === 'red') {
+//     return 'red is a great color'
+//   }
+//   else if(color === 'green'){
+//     return 'green is a solid color'
+//   } else if(color === 'black'){
+//     return 'so trendy'
+//   } else { 
+//     return 'you need to evaluate your favorite color choice'
+//   }
+// }
+
+// let colorRating = faveColorFinder('yellow')
+// let tannerRating = faveColorFinder('black')
+
+
+// console.log(colorRating)
+// console.log(tannerRating)
+
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 /*
@@ -226,6 +246,14 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+
+function printAllNames(names){
+  for(let i = 0; i < names.length; i++){
+    console.log(names[i])
+  }
+}
+printAllNames(namesArr)
+
 
 
 ////////////////// PROBLEM 13 ////////////////////
