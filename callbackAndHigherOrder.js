@@ -87,13 +87,13 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 
 // CODE HERE 
 
-const contains = (arr, name1, cb) => {
-  if(arr.includes(name1) === true) {
-  cb(true)}
-    else{
-      cb(false)
-    }
-  }
+// const contains = (arr, name1, cb) => {
+//   if(arr.includes(name1) === true) {
+//   cb(true)}
+//     else{
+//       cb(false)
+//     }
+//   }
 
 
 
@@ -101,13 +101,13 @@ const contains = (arr, name1, cb) => {
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-contains(names, 'Colt', result => {
-  if(result === true){
-    console.log('Colt is in the array')
-  } else {
-    console.log('Colt is not in the array')
-  }
-})
+// contains(names, 'Colt', result => {
+//   if(result === true){
+//     console.log('Colt is in the array')
+//   } else {
+//     console.log('Colt is not in the array')
+//   }
+// })
 
 
 
@@ -121,6 +121,18 @@ contains(names, 'Colt', result => {
 
 // CODE HERE
 
+// const uniq = (arr, callBack) => {
+//   for(let i = 0; i < arr.length; i++){
+//     for (let x = i + 1; x < arr.length; x++){
+//       if(arr[i] === arr[x]){
+//         arr.splice(x, 1)
+//         x--
+//       }
+//     }
+//   }
+//   callBack(arr)
+// }
+
 /*
   Invoke the uniq function, passing in the names array from above and a callback function.
   The callback function should take in one parameter called uniqArr.
@@ -130,7 +142,7 @@ contains(names, 'Colt', result => {
 
 // CODE HERE
 
-
+// uniq(names, uniqArr => console.log(`The new names array with all the duplicate items removed is ${uniqArr}`))
 
 ////////// PROBLEM 6 //////////
 
@@ -142,6 +154,9 @@ contains(names, 'Colt', result => {
 // CODE HERE 
 
 
+// const each = (arr, callback) => arr.forEach((el, i) => callback(el, i))
+
+
 /*
   Invoke the each function, passing in the names array and a callback function.
   The callback function should take in two parameters, item and index.
@@ -150,6 +165,8 @@ contains(names, 'Colt', result => {
 */
 
 // CODE HERE
+
+// each(names, (item, index) => `The item at ${index} is ${item}`)
 
 
 
@@ -177,6 +194,10 @@ contains(names, 'Colt', result => {
 
 // CODE HERE
 
+const addingFactory = x => y => x + y
+
+
+
 /*
   Now that you have addingFactory, you can create other
   functions from it. 
@@ -191,6 +212,11 @@ contains(names, 'Colt', result => {
 
 // CODE HERE
 
+
+const addTen = addingFactory(10)
+
+
+
 /*
   Now the inner function is stored in the addTen variable! 
 
@@ -202,6 +228,9 @@ contains(names, 'Colt', result => {
 */
 
 // CODE HERE
+
+
+console.log(addTen(5))
 
 /*
   Let's make another function from the addingFactory. 
@@ -217,7 +246,9 @@ contains(names, 'Colt', result => {
 // CODE HERE
 
 
+const addNUMBER = addingFactory(12)
 
+console.log(addNUMBER(5))
 
 ////////// CHALLENGE 2 //////////
 
